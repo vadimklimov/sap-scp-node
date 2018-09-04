@@ -1,0 +1,9 @@
+---
+applications:
+- name: node-app
+  buildpack: nodejs_buildpack
+  command: node server.js
+  memory: 1024MB
+  disk_quota: 1024MB
+  services:
+  - mongo-demo
